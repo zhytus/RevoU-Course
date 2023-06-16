@@ -3,9 +3,9 @@ function convert() {
   var result = document.getElementById("result");
 
   // Used to detect if the input is null or a string type
-  if (celsiusInput.value == "") {
+  if (celsiusInput.value === "" || isNaN(celsiusInput.value)) {
     alert("Please enter a valid temperature in Celsius Value");
-    celsiusInput.value = "";
+    resetFields;
     return;
   } else {
     // Convert Celsius to Fahrenheit
