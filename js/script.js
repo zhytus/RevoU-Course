@@ -3,7 +3,7 @@ function convert() {
   var result = document.getElementById("result");
 
   // Used to detect if the input is null or a string type
-  if (celsiusInput.value === "" || typeof celsiusInput.value === "string") {
+  if (celsiusInput.value == "" || typeof celsiusInput.value == "string") {
     alert("Please enter a valid temperature in Celsius Value");
     celsiusInput.value = "";
     return;
