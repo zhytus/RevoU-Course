@@ -11,19 +11,26 @@
   <body>
     <h1>Temperature Converter</h1>
     <div class="container">
-      <label for="celsius">Celsius:</label>
+      <label for="input">Celsius:</label>
       <div class="input-group">
         <input
           type="number"
-          id="celsius"
+          id="input"
           placeholder="Enter temperature in Celsius"
         />
-        <button onclick="convert()">Convert</button>
+        <button onclick="convertCelcius()">Convert</button>
         <button onclick="resetFields()">Reset</button>
+        <button onclick="reverseFahrenheit()">Reverse</button>
       </div>
 
       <div id="result"></div>
       <div id="logic"></div>
+    </div>
+    <div class="footer">
+      <h2>
+        Created By
+        <a href="https://github.com/zhytus">Dandi</a>
+      </h2>
     </div>
   </body>
 </html>
